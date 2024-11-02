@@ -27,34 +27,4 @@ class MainActivity : AppCompatActivity() {
         // 預先載入鄰近的頁面
         viewPager2.offscreenPageLimit = 1
     }
-
-    override fun onRestart() {
-        super.onRestart()
-        Log.e("MainActivity", "onRestart")
-    }
-
-    override fun onStart() {
-        super.onStart()
-        Log.e("MainActivity", "onStart")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.e("MainActivity", "onResume")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.e("MainActivity", "onPause")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.e("MainActivity","onStop")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.e("MainActivity","onDestroy")
-    }
 }
