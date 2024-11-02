@@ -14,8 +14,6 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.e("FirstFragment","onCreateView")
-        // 填充 Layout 佈局，返回 View 對象
         return inflater.inflate(R.layout.fragment_first, container, false)
     }
 }

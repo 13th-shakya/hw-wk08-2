@@ -14,8 +14,6 @@ class SecondFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.e("SecondFragment","onCreateView")
-        // 填充 Layout 佈局，返回 View 對象
         return inflater.inflate(R.layout.fragment_second, container, false)
     }
 }

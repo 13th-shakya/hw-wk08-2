@@ -18,13 +18,9 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        Log.e("MainActivity","onCreate")
-        // 取得 ViewPager2 元件
         val viewPager2 = findViewById<ViewPager2>(R.id.viewPager2)
-        // 建立 ViewPagerAdapter 並設定給 ViewPager2
         val adapter = ViewPagerAdapter(supportFragmentManager, this.lifecycle)
         viewPager2.adapter = adapter
-        // 預先載入鄰近的頁面
         viewPager2.offscreenPageLimit = 1
     }
 }
